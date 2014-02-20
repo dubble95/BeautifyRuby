@@ -60,9 +60,7 @@ class BeautifyRubyCommand(sublime_plugin.TextCommand):
 
   def finalize_output(self, text):
     lines = text.splitlines()
-    finalized_output = "\n".join(lines)
-    if self.view.settings().get("ensure_newline_at_eof_on_save") and not text.endswith("\n"):
-      text += "\n"
+    finalized_output = "\n".join(lines) + "\n"
     return finalized_output
 
   def load_settings(self):
