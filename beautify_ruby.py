@@ -33,6 +33,7 @@ class BeautifyRubyCommand(sublime_plugin.TextCommand):
       return
     self.save_viewport_state()
     beautified_buffer = self.pipe(self.cmd(), buffer_text)
+    beautified_buffer = self.finalize_output(beautified_buffer)
     self.check_valid_output(beautified_buffer)
     self.view.replace(edit, buffer_region, beautified_buffer)
     self.reset_viewport_state()

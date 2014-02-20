@@ -1,3 +1,18 @@
+this fork is windows line endings bug free version
+
+see this issue - [https://github.com/CraigWilliams/BeautifyRuby/issues/23](https://github.com/CraigWilliams/BeautifyRuby/issues/23)
+
+#### manual install
+
+
+```bash
+  cd "~/Library/Application Support/Sublime Text 2/Packages/"
+  git clone https://github.com/dubble95/BeautifyRuby.git
+```
+
+
+---------------
+
 # BeautifyRuby
 
 Beautifies Ruby code. This plugin uses the [Ruby Script Beautifier](http://www.arachnoid.com/ruby/rubyBeautifier.html) written by P.Lotus
